@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", serif;
+  
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0 0);
+  --color-primary: oklch(0.205 0 0);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.97 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-accent: oklch(0.97 0 0);
+  --color-accent-foreground: oklch(0.205 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(0.922 0 0);
+  --color-input: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+  
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-stone-50 text-stone-900;
+    direction: rtl;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+.markdown-body {
+  @apply font-serif text-lg leading-relaxed;
+}
+
+.markdown-body h1 {
+  @apply text-3xl font-bold mb-6 text-center;
+}
+
+.markdown-body h2 {
+  @apply text-2xl font-bold mt-8 mb-4 border-b border-stone-200 pb-2;
+}
+
+.markdown-body p {
+  @apply mb-4 text-justify;
+}
+
+.markdown-body ul, .markdown-body ol {
+  @apply mb-4 pr-6;
+}
+
+.markdown-body li {
+  @apply mb-2;
+}

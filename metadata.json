@@ -1,0 +1,6 @@
+{
+  "name": "باحث الذكاء الاصطناعي - AI Researcher",
+  "description": "برنامج احترافي لكتابة الأبحاث العلمية باستخدام الذكاء الاصطناعي مع مراجع دقيقة وتنسيق متكامل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
